@@ -1,15 +1,18 @@
 # -*- mode: snippet -*-
 # name: hugo-frontmatter
+# group: org
 # --
-#+title: $1
-#+hugo_bundle: $2
 #+author: Robert Martinis
+#+title: $1
+#+hugo_section: $2
+#+hugo_bundle: $3
+#+hugo_categories: $4
+#+hugo_tags: $5
+#+description: $6
 #+hugo_publishdate: `(format-time-string "%Y-%m-%dT%T%z")`
 #+date: `(format-time-string "%Y-%m-%dT%T%z")`
 #+hugo_auto_set_lastmod: t
-#+hugo_categories: $3
-#+hugo_tags: $4
-#+description: $5
 #+toc: headlines 3
 #+hugo_draft: false
-#+hugo_section: post
+#+export_file_name: index
+#+hugo_custom_front_matter: :image images/cover.jpg
